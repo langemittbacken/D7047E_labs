@@ -1,0 +1,9 @@
+Twitter Hate Speech Classification
+This repository contains the code for our project on classifying hate speech in Twitter posts. We have used four different models: Convolutional Neural Network (CNN), Long Short-Term Memory (LSTM), a combination of CNN and LSTM (CNN-LSTM), and BERT (Bidirectional Encoder Representations from Transformers).
+
+Files in this Repository
+CNN.py: This file contains the code for the Convolutional Neural Network (CNN) model. The CNN model consists of 1D convolutions, max pooling, and dropout. The activation function used is ReLU.
+
+Transformer.py: This file contains the code for the BERT model. We used BERT as a feature extractor for our input data. Each tweet is tokenized using BERT's tokenizer, and these token IDs are then used as input to the BERT model.
+
+twitterhatespeech.py: This file contains the code for the LSTM and CNN-LSTM models. The LSTM model is a Bidirectional LSTM with an input size of 786 and a hidden size of 400. The CNN-LSTM model combines both CNN and LSTM, using CNN as a feature extractor to extract important features that can later be used as an input to our LSTM.
